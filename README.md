@@ -12,9 +12,13 @@ Website for SSADC!
 ├── css
 │   └── css files for index.html
 ├── js
-│   └── css files for index.html
+│   └── js files for index.html
 └── pages
 │   └── new page
 │        └── newpage.html
-│        └── css
-│        └── js
+│        └── css files for newpage.html
+│        └── js files for newpage.html
+│   └── new page2
+│        └── newpage2.html
+│        └── css files for newpage2.html
+│        └── js files for newpage2.html
