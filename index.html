@@ -21,4 +21,26 @@
         <div class="scanlines"></div>
     </body>
 
+<!-- EXPERIMENT  -->
+    
+<script>
+   function notifyRobot() {
+        let params = {
+            username: "COOKIE",
+            avatar_url: "",
+            content: "Someone visited YORKU-DEV 👀"
+        }
+
+        const request = new XMLHttpRequest();
+        request.open("POST", "https://canary.discord.com/api/webhooks/933119385730711633/9G_gsNAYogVOJQkS9GtYGAo_69l6mGTjtBtS9zwgULdBVRZYIO07Bt0g1NqePFnrgHkn");
+        request.setRequestHeader('Content-type', 'application/json');
+        request.send(JSON.stringify(params));
+    }
+    
+    window.onload = function(){
+        notifyRobot()
+    }
+</script>
+    
+<!-- END EXPERIMENT-->
 </html>
