@@ -1,0 +1,46 @@
+div.large {
+    color: azure;
+    font-size: 5.5em;
+    font-style: normal;
+    text-align: center;
+}
+
+div.hero-img {
+    background-image: url('../temp.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    width: 86vw;
+    height: 80vh;
+    margin: auto;
+}
+
+div.tipbar {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    font-size: 1.8em;
+    position: relative;
+    top: -13vh;
+}
+div.bar-item {
+    flex: 1;
+}
+
+.mid1 {
+    color: white;
+    font-style: normal;
+}
+
+.sect-title {
+    color: wheat;
+    font-size: 2.4em;
+    margin-left: 1.4em;
+    font-style: italic;
+}
+.sect-main-desc {
+    font-size: 1.2em;
+    width: 50vw;
+}
