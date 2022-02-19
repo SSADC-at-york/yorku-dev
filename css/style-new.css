@@ -28,10 +28,15 @@ div.tipbar {
 div.bar-item {
     flex: 1;
 }
+div.bar-item a {
+    color: #ffffba;
+}
 
 .mid1 {
     color: white;
     font-style: normal;
+    
+    padding: 3em 0;
 }
 
 .sect-title {
@@ -39,8 +44,101 @@ div.bar-item {
     font-size: 2.4em;
     margin-left: 1.4em;
     font-style: italic;
+    padding: 0.4em;
 }
 .sect-main-desc {
     font-size: 1.2em;
-    width: 50vw;
+}
+
+#our-mission div.sect-main-desc {   
+    width: 42vw;
+    margin-left: 2.0em;
+}
+
+.centr {
+    text-align: center;
+}
+
+.flex-accordion {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-accordion .accordion-element {
+    flex: 1;
+    transition: 0.9s ease;
+}
+
+.flex-accordion .accordion-element:hover {
+    flex: 4.5;
+}
+
+.proj-element {
+    height: 72vh;
+    /* border: 2px soild white; */
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.proj-element .darken {
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transition: 0.9s ease;
+}
+
+.proj-element .project-title {
+    position: relative;
+    z-index: 1;
+    top: 18vh;
+    padding: 0.5em 0;
+    text-align: center;
+    
+    font-size: 1.9em;
+    background-color: white;
+    color: black;
+    transition: 0.9s ease;
+}
+
+.proj-element .project-desc {
+    position: relative;
+    opacity: 0.0;
+    top: 30vh;
+    width: 28vw;
+    margin: auto;
+    text-align: center;
+    transition: 0.9s ease; 
+    z-index: 1;
+    background-color: #222;
+    padding: 1.6em;
+}
+
+.proj-element:hover .darken {
+    opacity: 0.05;
+}
+.proj-element:hover .project-title {
+    top: 4vh;
+    padding: 0.25em 0;
+}
+.proj-element:hover .project-desc {
+    opacity: 1.0;
+    top: 10vh;
+}
+
+.proj-visit {
+    background-color: transparent;
+    font-size: 1.2em;
+    color: #ffffba;
+    border: 2px solid #ffffba;
+    transition: 0.5s ease; 
+}
+.proj-visit:hover {
+    background-color: #ffffba;
+    color: black;
 }
