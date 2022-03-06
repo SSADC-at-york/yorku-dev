@@ -157,12 +157,30 @@ div.bar-item a {
 
 #join-us .sect-main-desc .disc-link {
     text-align: center;
-    font-size: 1.5em;
-    line-height: 2.4;
+    font-size: 1.9em;
+    line-height: 2.8;
 }
 
 #join-us .sect-main-desc .contact-us {
     margin-top: 1.6em;
     text-align: center;
-    font-size: 1.5em;
+}
+
+#join-us .sect-main-desc .contact-us .contact-ttl {
+    font-size: 1.9em;
+    line-height: 2.8;
+}
+
+#join-us .sect-main-desc .contact-us .contact-detail {
+    font-size: 1.4em;
+    line-height: 2.05;
+    
+    text-align: left;
+    margin: auto;
+    position: relative;
+    width: 45em;
+}
+
+a {
+    color: #f5e76e;
 }
