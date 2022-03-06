@@ -9,7 +9,11 @@
         <link rel="stylesheet" href="./css/style-new.css">
         <title>Yorku.dev</title>
         <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    </head>    
+
+        <!-- discord invite widget -->
+        <link rel="stylesheet" href="discordinvite/discordInvite.css">
+        <script src="discordinvite/discordInvite.js"></script>
+    </head>
 
     <body>
         <!--
@@ -35,9 +39,15 @@
         <div id="our-mission" class="mid1">
             <div class="sect-title">Our Mission</div>
                 <div class="sect-main-desc">
-                    SSADC at YorkU, which stands for Student Support Application Development Council at YorkU, is a council led and organized by students of York University with the goal of developing applications and media for helping the student body. <br>
-                    We provide mutual support and shared resources to all students who want to add a new project to the union, contribute to projects, or help in improving the community.<br>
-                    We also serve as a simulated work environment for junior year students to contribute to projects and gain hands-on experience which is valuable for their future ventures into the workplace.
+                    <div class="sep-paragraph">
+                        SSADC at YorkU, which stands for Student Support Application Development Council at YorkU, is a <span class="hl">council led and organized by students</span> of York University with the goal of <span class="hl">developing applications and media for helping the student body</span>. <br>
+                    </div>
+                    <div class="sep-paragraph">
+                        We provide <span class="hl">mutual support and shared resources</span> to all students who want to add a new project to the union, contribute to projects, or help in improving the community.<br>
+                    </div>
+                    <div class="sep-paragraph">
+                        We also serve as a <span class="hl">simulated work environment</span> for junior year students to contribute to projects and gain hands-on experience which is valuable for their future ventures into the workplace.
+                    </div>
             </div>
         </div>
         
@@ -95,8 +105,20 @@
         <div id="join-us" class="mid1">
             <div class="sect-title">Join Us</div>
             <div class="sect-main-desc">
-                You can join us in our discord server here.<br>
-                
+                <div class="disc-link">
+                    You can join us in our discord server here:<br>
+                    <div id="discordInviteBox"></div>
+                    <script>
+  discordInvite.init({
+  inviteCode: 'NmnPJWpVSP',
+  title: 'Student Support Application Development Council',
+});
+discordInvite.render();
+                </script>
+                </div>
+                <div class="contact-us">
+                    To contact us:
+                </div>
             </div>
         </div>
         
