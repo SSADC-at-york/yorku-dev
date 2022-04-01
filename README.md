@@ -1,10 +1,6 @@
-# 🌐 [yorku-dev](https://yorku.dev)
-*Landing page for SSADC*
+[![banner](https://user-images.githubusercontent.com/43297314/161317909-d3cde8a4-7ddb-4486-a7c1-06710566fe83.png)](https://yorku.dev)
 
 ## ⚠️ This is a work in progress 
-
-![AShot-2022 01 01-00 31 14@2x](https://user-images.githubusercontent.com/43297314/147844574-e3747c4d-5878-4091-a956-8ed3a250af18.png)
-
 
 ---
 ## 👨‍💻 Note to contributors
