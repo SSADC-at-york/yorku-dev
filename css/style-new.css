@@ -1,3 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
 div.large {
     color: azure;
     font-size: 5.5em;
@@ -38,6 +47,7 @@ div.bar-item a {
     
     padding: 3em 0;
     min-height: 90vh;
+    position: relative;
 }
 
 .sect-title {
@@ -52,14 +62,26 @@ div.bar-item a {
 }
 
 #our-mission div.sect-main-desc {  
-    font-size: 1.32em; 
-    width: 40vw;
+    font-size: 1.46em; 
+    width: 55vw;
     margin-left: 3.0em;
     margin-top: 0.9em;
 }
 
+#our-mission .visual {
+    background-image: url("/ssadc%20homepage%20visual.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 90vh;
+    width: 90vh;
+    bottom: 0;
+    right: 0;
+}
+
 #our-mission div.sect-main-desc .sep-paragraph {
-    margin: 2.0em 0;
+    margin: 2.5em 0;
+    font-family: 'Roboto';
 }
 
 #our-mission div.sect-main-desc .sep-paragraph span.hl {
@@ -68,6 +90,10 @@ div.bar-item a {
 
 .centr {
     text-align: center;
+}
+
+.pa {
+    font-family: 'Roboto';
 }
 
 .flex-accordion {
@@ -129,6 +155,8 @@ div.bar-item a {
     z-index: 1;
     background-color: #222;
     padding: 1.6em;
+    
+    font-family: 'Roboto';
 }
 
 .proj-element:hover .darken {
@@ -181,6 +209,13 @@ div.bar-item a {
     width: 45em;
 }
 
+#support-us .sect-main-desc {
+    font-size: 1.9em;
+    text-align: center;
+}
+
+
 a {
     color: #f5e76e;
 }
+
