@@ -1,0 +1,221 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+div.large {
+    color: azure;
+    font-size: 5.5em;
+    font-style: normal;
+    text-align: center;
+}
+
+div.hero-img {
+    background-image: url('../temp.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    width: 86vw;
+    height: 80vh;
+    margin: auto;
+}
+
+div.tipbar {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    font-size: 1.8em;
+    position: relative;
+    top: -13vh;
+}
+div.bar-item {
+    flex: 1;
+}
+div.bar-item a {
+    color: #ffffba;
+}
+
+.mid1 {
+    color: white;
+    font-style: normal;
+    
+    padding: 3em 0;
+    min-height: 90vh;
+    position: relative;
+}
+
+.sect-title {
+    color: wheat;
+    font-size: 3.4em;
+    margin-left: 1.4em;
+    font-style: italic;
+    padding: 0.4em;
+}
+.sect-main-desc {
+    font-size: 1.2em;
+}
+
+#our-mission div.sect-main-desc {  
+    font-size: 1.46em; 
+    width: 55vw;
+    margin-left: 3.0em;
+    margin-top: 0.9em;
+}
+
+#our-mission .visual {
+    background-image: url("/ssadc%20homepage%20visual.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 90vh;
+    width: 90vh;
+    bottom: 0;
+    right: 0;
+}
+
+#our-mission div.sect-main-desc .sep-paragraph {
+    margin: 2.5em 0;
+    font-family: 'Roboto';
+}
+
+#our-mission div.sect-main-desc .sep-paragraph span.hl {
+    color: #ffdb3d;
+}
+
+.centr {
+    text-align: center;
+}
+
+.pa {
+    font-family: 'Roboto';
+}
+
+.flex-accordion {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-accordion .accordion-element {
+    flex: 1;
+    transition: 0.9s ease;
+}
+
+.flex-accordion .accordion-element:hover {
+    flex: 4.5;
+}
+
+.proj-element {
+    height: 72vh;
+    /* border: 2px soild white; */
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-align: center;
+}
+
+.proj-element .darken {
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transition: 0.9s ease;
+}
+
+.proj-element .project-title {
+    position: relative;
+    z-index: 1;
+    top: 18vh;
+    padding: 0.5em 0;
+    text-align: center;
+    
+    font-size: 1.9em;
+    background-color: white;
+    color: black;
+    transition: 0.9s ease;
+}
+
+.proj-element .project-desc {
+    position: relative;
+    opacity: 0.0;
+    top: 30vh;
+    width: 28vw;
+    margin: auto;
+    text-align: center;
+    transition: 0.9s ease; 
+    z-index: 1;
+    background-color: #222;
+    padding: 1.6em;
+    
+    font-family: 'Roboto';
+}
+
+.proj-element:hover .darken {
+    opacity: 0.05;
+}
+.proj-element:hover .project-title {
+    top: 4vh;
+    padding: 0.25em 0;
+}
+.proj-element:hover .project-desc {
+    opacity: 1.0;
+    top: 10vh;
+}
+
+.proj-visit {
+    background-color: transparent;
+    font-size: 1.2em;
+    color: #ffffba;
+    border: 2px solid #ffffba;
+    transition: 0.5s ease; 
+}
+.proj-visit:hover {
+    background-color: #ffffba;
+    color: black;
+}
+
+#join-us .sect-main-desc .disc-link {
+    text-align: center;
+    font-size: 1.9em;
+    line-height: 2.8;
+}
+
+#join-us .sect-main-desc .contact-us {
+    margin-top: 1.6em;
+    text-align: center;
+}
+
+#join-us .sect-main-desc .contact-us .contact-ttl {
+    font-size: 1.9em;
+    line-height: 2.8;
+}
+
+#join-us .sect-main-desc .contact-us .contact-detail {
+    font-size: 1.4em;
+    line-height: 2.05;
+    
+    text-align: left;
+    margin: auto;
+    position: relative;
+    width: 45em;
+}
+
+#support-us .sect-main-desc {
+    font-size: 1.9em;
+    text-align: center;
+}
+
+
+a {
+    color: #f5e76e;
+}
+

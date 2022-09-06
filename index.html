@@ -1,24 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Yorku.dev</title>
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/style-new.css">
+        <title>SSADC at YorkU</title>
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
-<body>
+        <!-- discord invite widget -->
+        <link rel="stylesheet" href="discordinvite/discordInvite.css">
+        <script src="discordinvite/discordInvite.js"></script>
+    </head>
 
     <body>
+        <!--
         <div class="container">
-            <div class="glitch" data-text="Work in Progress">Work in Progress</div>
-            <div class="glow">Work in Progress</div>
-            <p class="subtitle">YorkU Student Devs</p>
+            <div class="glitch" data-text="SSADC at YorkU">SSADC at YorkU</div>
+            <div class="glow">SSADC at YorkU</div>
+            <p class="subtitle">SSADC at YorkU</p>
         </div>
         <div class="scanlines"></div>
+        -->
+        
+        <div class="large">SSADC at YorkU</div>
+        
+        <div class="hero-img"></div>
+        
+        <div class="tipbar">
+            <div class="bar-item"><a href="#our-mission">Our Mission</a></div>
+            <div class="bar-item"><a href="#projects">Projects &amp; Services</a></div>
+            <div class="bar-item"><a href="#join-us">Join Us/Contact Us</a></div>
+            <div class="bar-item"><a href="#support-us">Support Us</a></div>
+        </div>
+        
+        <div id="our-mission" class="mid1">
+            <div class="sect-title">Our Mission</div>
+            <div class="sect-main-desc">
+                    <div class="sep-paragraph">
+                        SSADC at YorkU, which stands for Student Support Application Development Council at YorkU, is a <span class="hl">council led and organized by students</span> of York University with the goal of <span class="hl">developing applications and media for helping the student body</span>. <br>
+                    </div>
+                    <div class="sep-paragraph">
+                        We provide <span class="hl">mutual support and shared resources</span> to all students who want to add a new project to the union, contribute to projects, or help in improving the community.<br>
+                    </div>
+                    <div class="sep-paragraph">
+                        We also serve as a <span class="hl">simulated work environment</span> for junior year students to contribute to projects and gain hands-on experience which is valuable for their future ventures into the workplace.
+                    </div>
+            </div>
+            <div class="visual"></div>
+        </div>
+        
+        <div id="projects" class="mid1">
+            <div class="sect-title">Projects &amp; Services</div>
+            <div class="sect-main-desc">
+                <div class="centr pa">Currently our project catalog includes the following websites:</div>
+                <br>
+                
+                <div class="flex-accordion">
+                    <div class="accordion-element proj-element" style="background-image: url(coursedelta.png)">
+                        <div class="darken"></div>
+                        <div class="project-title">CourseDelta</div>
+                        <div class="project-desc">
+                            A site aiming to help student visualize prerequisite relations between courses, it can also serve as an alternative to the school's official course website for its easy usage. Maintained by @deep fried pancakes.
+                            <br>
+                            <br>
+                            <a href="https://coursedelta.yorku.dev/"><button class="proj-visit">Visit &#10132;</button></a>
+                        </div>
+                    </div>
+                    <div class="accordion-element proj-element" style="background-image: url(studybuddies.png)">
+                        <div class="darken"></div>
+                        <div class="project-title">Study Buddies</div>
+                        <div class="project-desc">
+                            A site aimed to connect student to groupchats of their courses. It is a database hosting the invite links to group chats for each course uploaded by students. Maintained by @foobarbaz. 
+                            <br>
+                            <br>
+                            <a href="https://www.yustudybuddies.com/"><button class="proj-visit">Visit &#10132;</button></a>
+                        </div>
+                    </div>
+                    <div class="accordion-element proj-element" style="background-image: url(classfinder.png)">
+                        <div class="darken"></div>
+                        <div class="project-title">Class Finder</div>
+                        <div class="project-desc">
+                            A site for student to put in the course section and find the route to its building. Maintained by @fallen. 
+                            <br>
+                            <br>
+                            <a href="https://find.yorku.dev/"><button class="proj-visit">Visit &#10132;</button></a>
+                        </div>
+                    </div>
+                    <div class="accordion-element proj-element" style="background-image: url(ssadcwiki.png)">
+                        <div class="darken"></div>
+                        <div class="project-title">SSADC wiki</div>
+                        <div class="project-desc">
+                            A wiki archiving many information about our community that would otherwise be lost or disorganized. Members of the community are also free to add their bios here. 
+                            <br>
+                            <br>
+                            <a href="https://ssadcwiki.yorku.dev/index.php/Main_Page"><button class="proj-visit">Visit &#10132;</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="join-us" class="mid1">
+            <div class="sect-title">Join Us/Contact Us</div>
+            <div class="sect-main-desc pa">
+                <div class="disc-link">
+                    Join our discussion and activities in our discord server here:<br>
+                    <div id="discordInviteBox"></div>
+                    <script>
+  discordInvite.init({
+  inviteCode: '2sHMZ2Enfx',
+  title: 'Student Support Application Development Council',
+});
+discordInvite.render();
+                </script>
+                </div>
+                <div class="contact-us">
+                    <div class="contact-ttl">
+                        Or, to reach us on other platforms:
+                    </div>
+                    <div class="contact-detail">
+                        E-mail: ssadc.atyork@gmail.com<br>
+                        GitHub: <a href="https://github.com/SSADC-at-york">https://github.com/SSADC-at-york</a><br>
+                        LinkedIn: <a href="https://www.linkedin.com/company/student-support-application-developement-council-at-york/about">https://www.linkedin.com/company/student-support-application-developement-council-at-york/about</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="support-us" class="mid1">
+            <div class="sect-title">Support Us</div>
+            <div class="sect-main-desc pa">
+                If you want to, you can send us monetary donation through these platforms:<br>
+                <br>
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ssadc" data-color="#FF5F5F" data-emoji=""  data-font="Lato" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+                <br>
+                <br>
+                Or, you can spread the word on social media platforms such as Reddit, Discord, Linkedin, etc.<br>
+                The more well known we are, the more likely we can get official funding from our school!
+            </div>
+        </div>
+        
     </body>
 
 <!-- EXPERIMENT 
@@ -47,7 +172,7 @@ join in! introduce yourself!
     }
     
     window.onload = function(){
-        notifyRobot()
+        //notifyRobot()
     }
 </script>
     
