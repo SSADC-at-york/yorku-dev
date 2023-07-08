@@ -96,6 +96,23 @@ div.bar-item a {
     font-family: 'Roboto';
 }
 
+.flex-accordion-v {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-accordion-v .flex-accordion-container {
+    
+
+    flex: 1;
+    transition: 0.9s ease;
+}
+
+.flex-accordion-v .flex-accordion-container:hover {
+
+    flex: 3;
+}
+
 .flex-accordion {
     display: flex;
     flex-direction: row;
