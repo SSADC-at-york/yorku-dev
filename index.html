@@ -65,7 +65,7 @@
                         <div class="darken"></div>
                         <div class="project-title">CourseDelta</div>
                         <div class="project-desc">
-                            A site aiming to help student visualize prerequisite relations between courses, it can also serve as an alternative to the school's official course website for its easy usage. Maintained by @deep fried pancakes.
+                            A site aiming to help student visualize prerequisite relations between courses, it can also serve as an alternative to the school's official course website for its easy usage. Maintained by @deepfriedpancakes.
                             <br>
                             <br>
                             <a href="https://coursedelta.yorku.dev/"><button class="proj-visit">Visit &#10132;</button></a>
@@ -85,13 +85,46 @@
                         <div class="darken"></div>
                         <div class="project-title">Empty Rooms</div>
                         <div class="project-desc">
-                            A site for checking usage schedule of classrooms in York campuses and finding vacant rooms to use, useful for students, professors, and administrative staff alike. Maintained by @deep fried pancakes.
+                            A site for checking usage schedule of classrooms in York campuses and finding vacant rooms to use, useful for students, professors, and administrative staff alike. Maintained by @deepfriedpancakes.
                             <br>
                             <br>
                             <a href="https://rooms.yorku.dev/"><button class="proj-visit">Visit &#10132;</button></a>
                         </div>
                     </div>
                 </div>
+                <div class="flex-accordion-container">
+                    <div class="flex-accordion">
+                        <div class="accordion-element proj-element" style="background-image: url(electives.png)">
+                            <div class="darken"></div>
+                            <div class="project-title">Elective Finder</div>
+                            <div class="project-desc">
+                                A site for finding elective courses with searches tailored for a student's preference and availability. Maintained by @plebwastaken and @kignis. 
+                                <br>
+                                <br>
+                                <a href="https://electives.yorku.dev/"><button class="proj-visit">Visit &#10132;</button></a>
+                            </div>
+                        </div>
+                        <div class="accordion-element proj-element" style="background-image: url(spots.png)">
+                            <div class="darken"></div>
+                            <div class="project-title">YU-Spots</div>
+                            <div class="project-desc">
+                                A site aimed to give students real time and location supported search for study spots on campus. Maintained by @mornightt, @andrewmaged, and @farismaali. 
+                                <br>
+                                <br>
+                                <a href="https://spots.yorku.dev/"><button class="proj-visit">Visit &#10132;</button></a>
+                            </div>
+                        </div>
+                        <div class="accordion-element proj-element" style="background-image: url(classfinder.png)">
+                            <div class="darken"></div>
+                            <div class="project-title">Class Finder</div>
+                            <div class="project-desc">
+                                A site for student to put in the course section and find the route to its building. Maintained by @isaackogan. 
+                                <br>
+                                <br>
+                                <a href="https://find.yorku.dev/"><button class="proj-visit">Visit &#10132;</button></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="flex-accordion-container">
                 <div class="flex-accordion">
@@ -103,16 +136,6 @@
                             <br>
                             <br>
                             <a href="https://github.com/mahfoozm/YorkURMP/releases"><button class="proj-visit">Visit &#10132;</button></a>
-                        </div>
-                    </div>
-                    <div class="accordion-element proj-element" style="background-image: url(classfinder.png)">
-                        <div class="darken"></div>
-                        <div class="project-title">Class Finder</div>
-                        <div class="project-desc">
-                            A site for student to put in the course section and find the route to its building. Maintained by @fallen. 
-                            <br>
-                            <br>
-                            <a href="https://find.yorku.dev/"><button class="proj-visit">Visit &#10132;</button></a>
                         </div>
                     </div>
                     <div class="accordion-element proj-element" style="background-image: url(ssadcwiki.png)">
@@ -151,8 +174,9 @@ discordInvite.render();
                     </div>
                     <div class="contact-detail">
                         E-mail: ssadc.atyork@gmail.com<br>
-                        GitHub: <a href="https://github.com/SSADC-at-york">https://github.com/SSADC-at-york</a><br>
-                        LinkedIn: <a href="https://www.linkedin.com/company/student-support-application-developement-council-at-york/about">https://www.linkedin.com/company/student-support-application-developement-council-at-york/about</a>
+                        <a href="https://github.com/SSADC-at-york">GitHub</a>
+                        &nbsp;
+                        <a href="https://www.linkedin.com/company/student-support-application-developement-council-at-york/about">LinkedIn</a>
                     </div>
                 </div>
             </div>
@@ -185,19 +209,6 @@ join in! introduce yourself!
     
     
 <script>
-   function notifyRobot() {
-        let params = {
-            username: "COOKIE",
-            avatar_url: "",
-            content: "Someone visited YORKU-DEV 👀"
-        }
-
-        const request = new XMLHttpRequest();
-        request.open("POST", "https://canary.discord.com/api/webhooks/933119385730711633/9G_gsNAYogVOJQkS9GtYGAo_69l6mGTjtBtS9zwgULdBVRZYIO07Bt0g1NqePFnrgHkn");
-        request.setRequestHeader('Content-type', 'application/json');
-        request.send(JSON.stringify(params));
-    }
-    
     window.onload = function(){
         //notifyRobot()
     }

@@ -102,14 +102,11 @@ div.bar-item a {
 }
 
 .flex-accordion-v .flex-accordion-container {
-    
-
     flex: 1;
     transition: 0.9s ease;
 }
 
 .flex-accordion-v .flex-accordion-container:hover {
-
     flex: 3;
 }
 
@@ -128,7 +125,7 @@ div.bar-item a {
 }
 
 .proj-element {
-    height: 72vh;
+    height: 60vh;
     /* border: 2px soild white; */
     position: relative;
     background-size: cover;
@@ -186,6 +183,8 @@ div.bar-item a {
 .proj-element:hover .project-desc {
     opacity: 1.0;
     top: 10vh;
+
+    /* max-height: calc(80% - 10vh); */
 }
 
 .proj-visit {
@@ -229,6 +228,8 @@ div.bar-item a {
 #support-us .sect-main-desc {
     font-size: 1.9em;
     text-align: center;
+
+    margin: 7.5%;
 }
 
 
@@ -236,3 +237,54 @@ a {
     color: #f5e76e;
 }
 
+/* Styles for screens 1024px and wider (laptops and desktops) */
+@media screen and (orientation: portrait) {
+    .flex-accordion {
+        flex-direction: column;
+    }
+    .flex-accordion-v .flex-accordion-container {
+        flex: 1;
+    }
+    
+    .flex-accordion-v .flex-accordion-container:hover {
+        flex: 1;
+    }
+
+    .flex-accordion .accordion-element {
+        flex: auto;
+    }
+    
+    .flex-accordion .accordion-element:hover {
+        flex: auto;
+    }
+
+    .proj-element {
+        height: 50vh;
+    }
+    .proj-element .darken {
+        opacity: 0.4;
+    }
+    .proj-element:hover .darken {
+        opacity: 0.4;
+    }
+
+    .proj-element .project-title {
+        top: 3vh;
+        padding: 0.4em 0;
+    }
+    .proj-element:hover .project-title {
+        top: 3vh;
+        padding: 0.4em 0;
+    }
+
+    .proj-element .project-desc {
+        width: 64vw;
+        top: 7vh;
+        opacity: 1.0;
+    }
+    .proj-element:hover .project-desc {
+        top: 7vh;
+    
+        /* max-height: calc(80% - 10vh); */
+    }
+}
